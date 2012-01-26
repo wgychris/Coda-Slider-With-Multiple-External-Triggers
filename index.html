@@ -1,0 +1,90 @@
+<!doctype html>
+<html xml:lang="en" lang="en">
+	<head>
+		<meta charset="utf-8">
+		<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><![endif]-->
+		<title>Coda Slider w/multiple external triggers</title>	
+		<link rel="stylesheet" href="css/style.css?v=1">
+		<script src="js/libs/modernizr-2.0.6.min.js"></script>
+	</head>
+	
+	<body>
+	
+		<div id="container">
+			<div id="push" class="clearfix">
+				<!-- ***HEADER*** -->			
+				<header id="main-header">
+					<hgroup>
+						<h1 class="home-link">
+							Coda Slider w/Multiple External Triggers
+						</h1>
+						<h2>By: <a href="http://waytoogood.ca">Myke Preuss</a></h2>
+					</hgroup>
+					<p>The purpose of this code is to allow you to have multiple external triggers on a page that control the same Coda Slider. The external triggers communicate with each other and add a class called "current" to the trigger which was clicked. The "current" class is what's adding the text-decoration: underline; but you could style it any way you want in your CSS.</p>
+					<p>The files you'll need for the Coda Slider are <a href="http://www.ndoherty.biz/2009/10/coda-slider-2/">here</a> and you can keep your jQuery set to the most recent in the HTML mark up.</p>
+					<p>Your external controls must be in a ul with a class of "slideControls" for this code to work.</p>
+				</header>
+
+				<!-- ***MAIN CONTENT*** -->							
+				<div id="main" role="main">
+					<ul class="slideControls">
+						<li><a class="xtrig" href="#1" rel="coda-slider-1">Panel 1</a></li>
+						<li><a class="xtrig" href="#2" rel="coda-slider-1">Panel 2</a></li>
+						<li><a class="xtrig" href="#3" rel="coda-slider-1">Panel 3</a></li>
+						<li><a class="xtrig" href="#4" rel="coda-slider-1">Panel 4</a></li>
+					</ul>
+
+					<!-- ***SLIDER CONTENT*** -->							
+					<div class="coda-slider-wrapper">
+						<div class="coda-slider preload" id="coda-slider-1">
+							<div class="panel">
+								<div class="panel-wrapper">
+									<h2 class="title">Panel 1</h2>
+								</div>
+							</div>
+							<div class="panel">
+								<div class="panel-wrapper">
+									<h2 class="title">Panel 2</h2>
+								</div>
+							</div>
+							<div class="panel">
+								<div class="panel-wrapper">
+									<h2 class="title">Panel 3</h2>
+								</div>
+							</div>
+							<div class="panel">
+								<div class="panel-wrapper">
+									<h2 class="title">Panel 4</h2>
+								</div>
+							</div>
+						</div><!-- .coda-slider -->
+					</div><!-- .coda-slider-wrapper -->				
+				</div>
+    		
+				<div id="lower-content">
+					<p>This one is missing the 1st slide to show how it works if you only want to select certain panels to be triggered.</p>
+					<ul class="slideControls">
+						<li><a class="xtrig" href="#2" rel="coda-slider-1">Panel 2</a></li>
+						<li><a class="xtrig" href="#3" rel="coda-slider-1">Panel 3</a></li>
+						<li><a class="xtrig" href="#4" rel="coda-slider-1">Panel 4</a></li>
+					</ul>
+				</div>
+
+			</div>			
+		</div>
+			
+		<!-- ***FOOTER*** -->			
+		<footer id="main-footer">
+			<div id="footer-inner">
+				<p></p>
+	  </p>
+		  	</div>
+		</footer>	
+
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+		<script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\/script>')</script>
+		<script src="js/libs/jquery.easing.1.3.js"></script>
+		<script src="js/libs/jquery.coda-slider-2.0.js"></script>
+		<script src="js/global.js?v=1"></script>
+	</body>
+</html>

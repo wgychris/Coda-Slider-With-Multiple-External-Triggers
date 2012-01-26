@@ -1,0 +1,212 @@
+/* HTML5 ✰ Boilerplate
+ * ==|== normalize ==========================================================
+ */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
+
+html { font-size: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+body { margin: 0; font-size: 14px; line-height: 18px; }
+body, button, input, select, textarea { font-family: Helvetica, arial, sans-serif; color: #000; }
+::-moz-selection { background: #677380; color: #fff; text-shadow: none; }
+::selection { background: #677380; color: #fff; text-shadow: none; }
+
+a { color: #BF7455; font-weight: bold; text-decoration: none; outline: 0; }
+a:hover { color: #fff; background: #BF7455; }
+
+b, strong { font-weight: bold; }
+ul, ol { list-style: none; list-style-image: none; margin: 0; padding: 0; }
+img { border: 0; -ms-interpolation-mode: bicubic; vertical-align: middle; }
+svg:not(:root) { overflow: hidden; }
+figure { margin: 0; }
+
+form { margin: 0; }
+fieldset { border: 0; margin: 0; padding: 0; }
+label { cursor: pointer; }
+legend { border: 0; *margin-left: -7px; padding: 0; }
+button, input, select, textarea { font-size: 100%; margin: 0; vertical-align: baseline; *vertical-align: middle; }
+button, input { line-height: normal; *overflow: visible; }
+button, input[type="button"], input[type="reset"], input[type="submit"] { cursor: pointer; -webkit-appearance: button; }
+input[type="checkbox"], input[type="radio"] { box-sizing: border-box; }
+input[type="search"] { -webkit-appearance: textfield; -moz-box-sizing: content-box; -webkit-box-sizing: content-box; box-sizing: content-box; }
+input[type="search"]::-webkit-search-decoration { -webkit-appearance: none; }
+button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
+textarea { overflow: auto; vertical-align: top; resize: vertical; }
+input:valid, textarea:valid {  }
+input:invalid, textarea:invalid { background-color: #f0dddd; }
+
+h1, h2, h3, h4 {
+	margin: 0;
+	padding: 0;
+	font-weight: normal;
+}
+
+h3 {
+	font-size: 26px;
+	line-height: 30px;
+}
+
+
+/* ==|== primary styles =====================================================
+   Author: @mykepreuss
+   ========================================================================== */
+
+html, body, #container { height: 100%; }
+body > #container {height: auto; min-height: 100%;}
+#push { padding-bottom: 62px; }  /* must be same height as the footer */
+
+#container {
+	margin: 0 auto;
+	width: 990px;
+}
+
+/* START Header */
+#main-header {
+	padding: 40px 0;
+	width: 100%;
+	float: left;
+}
+
+#main-header h1 {
+	line-height: 48px;
+}
+
+#main-header h2 {
+	line-height: 24px;
+}
+
+/* END Header */
+
+
+/* START Content Area */
+
+
+.coda-slider-wrapper { padding: 20px 0 }
+.coda-slider { background: #ebebeb }
+
+.button_loading {
+	position: relative;
+	top: 1px;
+	margin-right: 13px;
+	padding: .2857em 1.14286em;
+	border: 1px solid #2A8A15;
+	background: white url(../images/global/ajax-button-loader.gif) no-repeat 50% 50%;
+}
+
+li.current a {
+	text-decoration: underline;
+}
+/* Change the width of the entire slider (without dynamic arrows) */
+.coda-slider, .coda-slider .panel { width: 938px; } 
+
+/* Change margin and width of the slider (with dynamic arrows) */
+.coda-slider-wrapper.arrows .coda-slider, .coda-slider-wrapper.arrows .coda-slider .panel { width: 938px; height: 450px; }
+.coda-slider-wrapper.arrows .coda-slider { margin: 0; }
+
+/* Arrow styling */
+.coda-nav-left a, .coda-nav-right a { background: #000; color: #fff; width: 26px; height: 450px; }
+
+/* Tab nav */
+.coda-nav ul li a.current { background: #39c; }
+
+/* Panel padding */
+.coda-slider .panel-wrapper { padding: 20px; }
+
+/* Preloader */
+.coda-slider p.loading { padding: 20px; text-align: center; }
+
+/* Don't change anything below here unless you know what you're doing */
+
+/* Tabbed nav */
+.coda-nav ul { clear: both; display: block; margin: auto; overflow: hidden; }
+.coda-nav ul li { display: inline; }
+.coda-nav ul li a { background: #000; color: #fff; display: block; float: left; margin-right: 1px; padding: 3px 6px; text-decoration: none; }
+
+/* Miscellaneous */
+.coda-slider-wrapper { clear: both; overflow: auto; }
+.coda-slider { float: left; overflow: hidden; position: relative; }
+.coda-slider .panel { display: block; float: left; }
+.coda-slider .panel-container { position: relative; }
+.coda-nav-left, .coda-nav-right { float: left; }
+.coda-nav-left a, .coda-nav-right a { display: block; text-align: center; text-decoration: none; }
+/* END Content Area */
+
+
+/* START Footer */
+#main-footer {
+	position: relative;
+	border-top: 2px solid #60aa21;	
+	margin: -64px auto 0; /* negative value of footer height */
+	height: 62px;
+	width: 100%;
+	clear: both;
+	background: #1a1719;
+}
+
+#footer-inner {
+	width: 990px;
+	margin: 0 auto;
+}
+
+#main-footer p {
+	font-size: 12px;
+	line-height: 14px;
+	color: #838383;
+}
+
+#main-footer p span, #main-footer p span a {
+	color: #000;
+}
+
+#main-footer p span a {
+	font-weight: normal;
+}
+
+#main-footer p span a:hover {
+	color: #fff;
+}
+
+/* END Footer */
+
+
+/* ==|== non-semantic helper classes ======================================== */
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+.hidden { display: none !important; visibility: hidden; }
+
+/* CLEAR FIX*/
+.clearfix:after {content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.clearfix {display: inline-block;}
+
+/* Hides from IE-mac \*/
+* html .clearfix { height: 1%;}
+.clearfix {display: block;}
+/* End hide from IE-mac */
+
+/* ==|== print styles ======================================================= */
+ 
+@media print {
+  * { background: transparent !important; color: black !important; text-shadow: none !important; filter:none !important; -ms-filter: none !important; } 
+  a, a:visited { text-decoration: underline; }
+  a[href]:after { content: " (" attr(href) ")"; }
+  abbr[title]:after { content: " (" attr(title) ")"; }
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; } 
+  pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
+  thead { display: table-header-group; }
+  tr, img { page-break-inside: avoid; }
+  img { max-width: 100% !important; }
+  @page { margin: 0.5cm; }
+  p, h2, h3 { orphans: 3; widows: 3; }
+  h2, h3 { page-break-after: avoid; }
+}
